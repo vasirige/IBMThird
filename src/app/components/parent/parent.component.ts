@@ -14,10 +14,10 @@ export class ParentComponent implements OnInit {
 
   ngOnInit() {
     this.parentCount = 10;
-    this.message = `Child count initialized to ${this.parentCount}`;// template string you can inject values in variables
+    this.message = `Child count initialized to ${this.parentCount}`;// template string you can inject values in string variables
   }
 
-  onCountChanged(eventData) {
+  onCountChanged1(eventData) {
     this.parentCount = eventData;
     this.message = `Child count changed to ${this.parentCount}`;
   }

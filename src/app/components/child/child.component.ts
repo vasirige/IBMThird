@@ -16,7 +16,7 @@ export class ChildComponent implements OnInit {
   // child to retrive the data which is passed by parent bu attributes.
   // child to parent communication is done through using event and send associated data.
 
-  @Output() countChanged = new EventEmitter<number>();
+  @Output() countChanged = new EventEmitter<number>(); // countChanged is custom event name as EventEmitter.
 
   constructor() { }
 
