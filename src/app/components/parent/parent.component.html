@@ -1,0 +1,9 @@
+<div id="parentDiv">
+  <h3>Parent Component</h3>
+  <div>{{ message }}</div>
+  <app-child 
+    [childCount]="parentCount"
+    (countChanged)="onCountChanged($event)"> <!-- event bining and used custom event-->
+    <!-- attribute binding passing parent value to child component-->
+  </app-child>
+</div>
