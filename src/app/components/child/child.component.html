@@ -5,11 +5,11 @@
     <button (click)="incrementCount()">Increment</button>
     <button (click)="decrementCount()">Decrement</button>
   </div>
+  <p></p>
   <div>
-      <h3>Add Actor Form</h3>
-      Actor Name :<input type="text" [(ngModel)] ="actor.name"/><br/>
-    
-      Actor City :<input type="text" [(ngModel)] ="actor.city"/>
-      <br/>
-      <button (click)="addActor()">Add Actor</button>
+    <h4>Actor Creation Form</h4>
+    Actor Name: <input type="text" [(ngModel)]="actor.name"> <br>
+    Actor City: <input type="text" [(ngModel)]="actor.city"> <br>
+    <button (click)="createActor()">Create Actor</button>
   </div>
+</div>
