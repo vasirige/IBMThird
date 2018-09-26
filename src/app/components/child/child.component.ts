@@ -41,5 +41,6 @@ export class ChildComponent implements OnInit {
 
   addActor(){
     this.actorCreted.emit(this.actor);
+    this.actor =  {name:'', city:''};
   }
 }

@@ -27,6 +27,7 @@ export class ParentComponent implements OnInit {
   onActorCreated(eventData)
   {
     this.actor = eventData;
-    alert(`Actor object created with name ${this.actor.name} and city ${this.actor.name}`);
+    alert(`Actor object created with name ${this.actor.name} and city ${this.actor.city}`);
+    
   }
 }
